@@ -145,6 +145,7 @@ nav h1 a {
   min-height: 380px;
   padding: 0 30px 25px;
   text-align: left;
+
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
@@ -203,8 +204,9 @@ nav h1 a {
 }
 .inside #footer {
   bottom: 0;
+  display: block;
   position: absolute;
-  width: 50%;
+  width: 100%;
 }
 #restaurant-name {
   color: #f18200;
@@ -242,7 +244,7 @@ nav h1 a {
   width: 50%;
 }
 #reviews-container {
-  padding: 30px 40px 80px;
+  padding: 5px 25px 80px;
 }
 #reviews-container h2 {
   color: #f58500;
@@ -262,7 +264,7 @@ nav h1 a {
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
-  padding: 0 20px 20px;
+  padding: 0 10px 10px;
   position: relative;
   width: 85%;
 }
