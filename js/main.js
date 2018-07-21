@@ -78,7 +78,7 @@ initMap = () => {
         scrollWheelZoom: false
       });
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
-    mapboxToken: '<your MAPBOX API KEY HERE>',
+    mapboxToken: 'pk.eyJ1IjoieXVraW5vam8iLCJhIjoiY2pqc2t3Z2ltMDlwMzNwbXJydWI4bG5idiJ9.jOoIpN1SjAa2k2zGckco_A',
     maxZoom: 18,
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
       '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
@@ -144,10 +144,13 @@ resetRestaurants = (restaurants) => {
 /**
  * Create all restaurants HTML and add them to the webpage.
  */
+// NOTE: added an additional self generated parameter 'counter' which generates a new unique number id for each restaurant filled on the list, for flex box targetting
 fillRestaurantsHTML = (restaurants = self.restaurants) => {
   const ul = document.getElementById('restaurants-list');
-  restaurants.forEach(restaurant => {
-    ul.append(createRestaurantHTML(restaurant));
+  let counter = 0; // unique id for each restaurant for easy targeting
+  restaurants.forEach((restaurant, counter) => {
+    counter++;
+    ul.append(createRestaurantHTML(restaurant, counter));
   });
   addMarkersToMap();
 }
@@ -155,8 +158,10 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
 /**
  * Create restaurant HTML.
  */
-createRestaurantHTML = (restaurant) => {
-  const li = document.createElement('li');
+// NOTE: added an additional self generated parameter 'id' which passes an id value to each generated element
+createRestaurantHTML = (restaurant, id) => {
+  const li = document.createElement('li');  
+  li.id = id;
 
   const image = document.createElement('img');
   image.className = 'restaurant-img';

@@ -1,0 +1,77 @@
+/* phone */
+@media screen and (max-width: 500px) {
+/* ====================== Navigation ====================== */
+  nav {
+    height: auto;
+  }
+/* ====================== Restaurant Listing ====================== */
+  #restaurants-list {
+    min-width: 90%;
+    background-color: green;
+  }
+
+/* ====================== Restaurant Filtering ====================== */
+  .filter-options {
+    display: inline-block;
+    height: auto;
+  }
+
+  .filter-options h2 {
+    display: inline-block;
+  }
+
+  .filter-options select {
+    max-width: 40%;
+  }
+}
+
+
+/* ipad */
+
+@media screen and (min-width: 501px) and (max-width: 745px) {
+
+  /* ====================== Restaurant Listing ====================== */
+  #restaurants-list {
+    min-width: 90%;
+    background-color: red;
+  }
+
+  /* ====================== Restaurant Filtering ====================== */
+  .filter-options {
+    display: inline-block;
+    height: auto;
+  }
+
+  .filter-options h2 {
+    display: inline-block;
+  }
+
+  .filter-options select {
+    max-width: 40%;
+  }
+}
+
+/* desktop */
+/* for massive screens 1000+ change it to double column and each restaurant should only take 50% height 50% width */
+@media screen and (min-width: 746px) {
+  #restaurants-list {
+    width: 75%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: blue;
+  }
+
+  /* ====================== Restaurant Filtering ====================== */
+  .filter-options {
+    display: inline-block;
+    height: auto;
+  }
+
+  .filter-options h2 {
+    display: inline-block;
+  }
+  
+  .filter-options select {
+    max-width: 40%;
+  }
+}
