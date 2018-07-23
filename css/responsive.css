@@ -8,9 +8,14 @@
   #restaurants-list {
     background-color: green;
     display: flex;
+    flex-wrap: wrap;
     min-width: 90%;
-
   }
+
+  #restaurants-list li {
+    width: 90%;
+  }
+
 
 /* ====================== Restaurant Filtering ====================== */
   .filter-options {
