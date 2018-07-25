@@ -1,5 +1,19 @@
 # Mobile Web Specialist Certification Course
 
+Adapted for FEND project submission.
+
+Additional functionality for accessibility and responsive design added using pure css.
+
+Added service worker functionality to allow for offline website access through caching.
+
+By: James Bui
+
+## To Run
+
+Download or clone repository `git clone https://github.com/Naiyachiri/mws-restaurant-stage-1.git `.
+Navigate to repository directory and run `python -m http.server 8000` or replace '8000' with your desired port.
+Access the application by navigating to https://localhost:8000 if you used the exact command listed above or replace '8000' with your port number.
+
 #### _Three Stage Course Material Project - Restaurant Reviews
 
 ## Project Overview: Stage 1
