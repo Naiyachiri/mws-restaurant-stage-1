@@ -1,3 +1,7 @@
+/**
+ * Code reworked for our website using guide at : https://developers.google.com/web/fundamentals/codelabs/offline/
+ */
+
 importScripts('/cache-polyfill.js');
 
 self.addEventListener('install', function(e) {
@@ -7,7 +11,6 @@ self.addEventListener('install', function(e) {
        '/',
        '/index.html',
        '/restaurant.html',
-       '/?homescreen=1',
        '/css/styles.css',
        '/css/responsive.css',
        '/js/dbhelper.js',
