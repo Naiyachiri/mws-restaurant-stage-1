@@ -65,7 +65,16 @@
   }
 
   #restaurants-list li {
-    max-width: 40%;
+    border-radius: 0;
+    height: fit-content;
+    margin: 5px 15px;
+    padding: 0;
+    width: 20%;
+  }
+
+  #restaurants-list li a{
+    padding: 0;
+    width:100%;
   }
 
   /* ====================== Restaurant Filtering ====================== */

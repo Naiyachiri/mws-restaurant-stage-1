@@ -161,7 +161,7 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
 // NOTE: added an additional self generated parameter 'id' which passes an id value to each generated element
 createRestaurantHTML = (restaurant, id) => {
   const li = document.createElement('li');  
-  li.id = id;
+  li.id = 'restaurant'+id;
 
   const image = document.createElement('img');
   image.className = 'restaurant-img';
