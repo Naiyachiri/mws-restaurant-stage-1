@@ -150,6 +150,7 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
 createReviewHTML = (review) => {
   const div = document.createElement('div');
   const li = document.createElement('li');
+  li.setAttribute('tabindex', '0');
   const name = document.createElement('p');
   div.classList.add('review-header'); // add class to target with css
   li.appendChild(div); // appends a div to hold the review header
